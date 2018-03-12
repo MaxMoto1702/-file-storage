@@ -1,0 +1,170 @@
+= File Storage
+
+== API
+
+=== GET /content
+
+==== Curl
+
+include::{snippets}/content_get/curl-request.adoc[]
+
+==== HTTPie
+
+include::{snippets}/content_get/httpie-request.adoc[]
+
+==== HTTP Request
+
+include::{snippets}/content_get/http-request.adoc[]
+
+==== HTTP Response
+
+include::{snippets}/content_get/http-response.adoc[]
+
+=== GET /content/{id}
+
+==== Curl
+
+include::{snippets}/content_get_item/curl-request.adoc[]
+
+==== HTTPie
+
+include::{snippets}/content_get_item/httpie-request.adoc[]
+
+==== Path Parameters
+
+include::{snippets}/content_get_item/path-parameters.adoc[]
+
+==== HTTP Request
+
+include::{snippets}/content_get_item/http-request.adoc[]
+
+==== HTTP Response
+
+include::{snippets}/content_get_item/http-response.adoc[]
+
+=== GET /content/{id}/stream
+
+==== Curl
+
+include::{snippets}/content_get_stream/curl-request.adoc[]
+
+==== HTTPie
+
+include::{snippets}/content_get_stream/httpie-request.adoc[]
+
+==== Path Parameters
+
+include::{snippets}/content_get_stream/path-parameters.adoc[]
+
+==== HTTP Request
+
+include::{snippets}/content_get_stream/http-request.adoc[]
+
+==== HTTP Response
+
+include::{snippets}/content_get_stream/http-response.adoc[]
+
+=== POST /content
+
+==== Curl
+
+include::{snippets}/content_post/curl-request.adoc[]
+
+==== HTTPie
+
+include::{snippets}/content_post/httpie-request.adoc[]
+
+==== HTTP Request
+
+include::{snippets}/content_post/http-request.adoc[]
+
+==== HTTP Response
+
+include::{snippets}/content_post/http-response.adoc[]
+
+==== HTTP Request Fields
+
+include::{snippets}/content_post/request-fields.adoc[]
+
+==== HTTP Response Fields
+
+include::{snippets}/content_post/response-fields.adoc[]
+
+=== PUT /content/{id}
+
+==== Curl
+
+include::{snippets}/content_put/curl-request.adoc[]
+
+==== HTTPie
+
+include::{snippets}/content_put/httpie-request.adoc[]
+
+==== Path Parameters
+
+include::{snippets}/content_put/path-parameters.adoc[]
+
+==== HTTP Request
+
+include::{snippets}/content_put/http-request.adoc[]
+
+==== HTTP Response
+
+include::{snippets}/content_put/http-response.adoc[]
+
+==== HTTP Request Fields
+
+include::{snippets}/content_put/request-fields.adoc[]
+
+==== HTTP Response Fields
+
+include::{snippets}/content_put/response-fields.adoc[]
+
+=== PUT /content/{id}/stream
+
+==== Curl
+
+include::{snippets}/content_put_stream/curl-request.adoc[]
+
+==== HTTPie
+
+include::{snippets}/content_put_stream/httpie-request.adoc[]
+
+==== Path Parameters
+
+include::{snippets}/content_put_stream/path-parameters.adoc[]
+
+==== HTTP Request
+
+include::{snippets}/content_put_stream/http-request.adoc[]
+
+==== HTTP Response
+
+include::{snippets}/content_put_stream/http-response.adoc[]
+
+==== HTTP Response Fields
+
+include::{snippets}/content_put_stream/response-fields.adoc[]
+
+=== DELETE /content/{id}
+
+==== Curl
+
+include::{snippets}/content_delete/curl-request.adoc[]
+
+==== HTTPie
+
+include::{snippets}/content_delete/httpie-request.adoc[]
+
+==== Path Parameters
+
+include::{snippets}/content_delete/path-parameters.adoc[]
+
+==== HTTP Request
+
+include::{snippets}/content_delete/http-request.adoc[]
+
+==== HTTP Response
+
+include::{snippets}/content_delete/http-response.adoc[]
+
