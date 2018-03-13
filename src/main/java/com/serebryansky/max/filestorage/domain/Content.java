@@ -2,7 +2,6 @@ package com.serebryansky.max.filestorage.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,12 +20,13 @@ public class Content {
     private String name;
 
     @NotBlank
-    private String mimeType;
+    private String type;
 
+    @NotNull
     private Integer size;
 
     @JsonIgnore
-    private Long fileId;
+    private Long contentDataId;
 
     public Long getId() {
         return id;
@@ -44,12 +44,12 @@ public class Content {
         this.name = name;
     }
 
-    public String getMimeType() {
-        return mimeType;
+    public String getType() {
+        return type;
     }
 
-    public void setMimeType(String mimeType) {
-        this.mimeType = mimeType;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public Integer getSize() {
@@ -60,11 +60,11 @@ public class Content {
         this.size = size;
     }
 
-    public Long getFileId() {
-        return fileId;
+    public Long getContentDataId() {
+        return contentDataId;
     }
 
-    public void setFileId(Long fileId) {
-        this.fileId = fileId;
+    public void setContentDataId(Long contentDataId) {
+        this.contentDataId = contentDataId;
     }
 }

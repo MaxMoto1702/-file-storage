@@ -19,5 +19,5 @@ public interface ContentService {
 
     Content updateBytes(Long id, byte[] bytes);
 
-    Content delete(Long id);
+    void delete(Long id);
 }

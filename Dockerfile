@@ -15,6 +15,8 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 VOLUME /tmp
 VOLUME /data
+VOLUME /logs
+#ENV LOG_FILE /logs/file-storage.log
 ARG JAR_FILE
 ADD ${JAR_FILE} app.jar
 EXPOSE 8080
