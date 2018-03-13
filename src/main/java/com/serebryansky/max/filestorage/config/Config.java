@@ -1,4 +1,4 @@
-package com.serebryansky.max.filestorage;
+package com.serebryansky.max.filestorage.config;
 
 import org.springframework.context.annotation.Configuration;
 

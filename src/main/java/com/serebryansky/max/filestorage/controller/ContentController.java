@@ -1,5 +1,7 @@
-package com.serebryansky.max.filestorage;
+package com.serebryansky.max.filestorage.controller;
 
+import com.serebryansky.max.filestorage.domain.Content;
+import com.serebryansky.max.filestorage.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.Assert;

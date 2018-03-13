@@ -9,11 +9,12 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.description="File storage for other systems" \
       org.label-schema.url="http://max.serebryansky.com" \
       org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/maxmoto1702/file-storage" \
+      org.label-schema.vcs-url="https://github.com/maxmoto1702/max-file-storage" \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 
 VOLUME /tmp
+VOLUME /data
 ARG JAR_FILE
 ADD ${JAR_FILE} app.jar
 EXPOSE 8080

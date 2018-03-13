@@ -1,4 +1,6 @@
-package com.serebryansky.max.filestorage;
+package com.serebryansky.max.filestorage.service;
+
+import com.serebryansky.max.filestorage.domain.Content;
 
 import java.util.List;
 

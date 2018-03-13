@@ -1,4 +1,4 @@
-package com.serebryansky.max.filestorage;
+package com.serebryansky.max.filestorage.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.NotBlank;

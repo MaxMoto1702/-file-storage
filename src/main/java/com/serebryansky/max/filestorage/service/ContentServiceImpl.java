@@ -1,5 +1,6 @@
-package com.serebryansky.max.filestorage;
+package com.serebryansky.max.filestorage.service;
 
+import com.serebryansky.max.filestorage.domain.Content;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
