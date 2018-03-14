@@ -17,7 +17,7 @@ spring:
     initialize: true
 
 logging:
-  path: /tmp/file-storage.log
+  path: /tmp/file-storage/test.log
   level:
     root: off
     com.serebryansky.max.filestorage:
