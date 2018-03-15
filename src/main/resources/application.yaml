@@ -13,5 +13,9 @@ spring:
     username: postgres
     password: example
     driver-class-name: org.postgresql.Driver
+  data:
+    rest:
+      base-path: /api
+#      defaultMediaType: application/json
 logging:
   file: /logs/file-storage.log

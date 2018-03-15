@@ -2,15 +2,18 @@ package com.serebryansky.max.filestorage.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.domain.Persistable;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 @Entity
-public class Content {
+@EntityListeners(AuditingEntityListener.class)
+public class Content implements Persistable<Long> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,13 +26,30 @@ public class Content {
     private String type;
 
     @NotNull
-    private Integer size;
+    @Column(columnDefinition = "INT default -1")
+    private Integer size = -1;
 
     @JsonIgnore
     private Long contentDataId;
 
+    @Version
+    private Long version;
+
+    @CreatedDate
+    private Date createDate;
+
+    @LastModifiedDate
+    private Date lastModifiedDate;
+
+    @Override
     public Long getId() {
         return id;
+    }
+
+    @Override
+    @JsonIgnore
+    public boolean isNew() {
+        return id == null;
     }
 
     public void setId(Long id) {
@@ -66,5 +86,29 @@ public class Content {
 
     public void setContentDataId(Long contentDataId) {
         this.contentDataId = contentDataId;
+    }
+
+    public Long getVersion() {
+        return version;
+    }
+
+    public void setVersion(Long version) {
+        this.version = version;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public Date getLastModifiedDate() {
+        return lastModifiedDate;
+    }
+
+    public void setLastModifiedDate(Date lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
     }
 }
